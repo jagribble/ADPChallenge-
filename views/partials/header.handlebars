@@ -1,0 +1,60 @@
+<script>
+ $(document).ready(function () {
+   $('.slider').slider({full_width: true});
+   $('#preloader').fadeOut(function(){
+    $(this).remove();
+  });
+   $('#pre-window').delay(1000).fadeOut("slow",function(){
+    $(this).remove();
+  });
+   $(this).scrollTop(0);
+    });
+
+</script>
+<script src="js/register.js"></script>
+<link rel="stylesheet" href="css/preloader.css">
+
+<div id="pre-window">
+<div id="preloader">
+<div class="preloader-wrapper big active" style="position:fixed;bottom:50%;left:50%;" align="center">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="header">
+  <nav style="background: black" role="navigation">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img style="margin-top:13px;margin-left:10px;" src="img/logo.png"></img></a>
+        <div class="right-align" style="float:right; padding:15px;" id="welcome"></div>
+      </div>
+
+    </div>
+  </nav>
+</div>
+
+<div class="slider" style="max-width:100%;min-width:100%;">
+  <ul class="slides">
+  {{#each header.items}}
+    <li>
+
+      <img class="" style="" src="{{this.fields.sliderImage.fields.file.url}}"> <!-- random image -->
+      <div class="caption center-align">
+
+        <h2>{{this.fields.sliderText1}}</h2>
+        <h3 class="light grey-text text-lighten-3">{{this.fields.sliderTag}}</h3>
+
+      </div>
+    </li>
+    {{/each}}
+
+  </ul>
+</div>

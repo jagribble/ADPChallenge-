@@ -1,0 +1,48 @@
+
+span.roll {
+	background:center center no-repeat #fff;
+	height: 100%;
+	position: absolute;
+  text-align: left;
+	width: 100%;
+	z-index: 10;
+}
+
+/* add the font awesome icon */
+
+.roll:before {
+    content: "\F055";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #784669;
+    font-size: 40px;
+    padding-right: 0.5em;
+    position: absolute;
+    margin-left: 10px;
+}
+
+/*Benefit class style sits here*/
+
+.benefits td{
+    padding-left:0;
+    padding-right:0;
+    text-align: center;
+    width: 20%;
+}
+.benefits div{
+    height: 100px;
+    width: 90%;
+}
+
+#benefitTable td {text-align:center; vertical-align:middle;}
+
+.padding-bottom{
+	padding-bottom: 20px;
+}
+
+.paddingLeft{
+	padding-left: 20px;
+}

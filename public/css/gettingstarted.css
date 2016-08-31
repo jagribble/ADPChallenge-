@@ -1,0 +1,26 @@
+#gettingstartedcard{
+	padding:10px;
+}
+.tab {
+	float: left;
+
+	margin-right:20px;
+	margin: 0 10px;
+	background: #FFFFFF;
+	min-width:25% !important;
+
+}
+#gettingstartedcard{
+	min-height: 320px;
+}
+.startcontent{
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+@media only screen and (max-width: 480px){
+	font-size: 16px !important; 
+	font-size: 3.5vw !important;
+}
+
+

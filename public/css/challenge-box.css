@@ -1,0 +1,76 @@
+
+/* ===== Box styling custom CSS, copy from here =====*/
+.challenge-box {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  text-align: center;
+  text-decoration: none;
+  margin-right:5px;
+ }
+
+.challenge-box-inner {
+  margin: 15px;
+  display:block;
+}
+
+ .challenge-box h2, .challenge-box p {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -moz-transform 1s;
+    transition: transform 1s;
+  }
+
+.challenge-box h2 {
+  border-bottom: 1px solid #ccc;
+  padding: 0.4em 0;
+  color:#333!important;
+  font-size:2.3rem!important;
+  line-height: 2.5rem;
+}
+
+/*======= hover styling, not mandatory ========*/
+.challenge-box:hover {background: #EAEAEA;
+    -webkit-transition: background 0.5s;
+    -moz-transition:    background 0.5s;
+    -ms-transition:     background 0.5s;
+    -o-transition:      background 0.5s;
+    transition:         background 0.5s;
+}
+
+.challenge-box:hover h2, .challenge-box:active h2 {
+  border-bottom-color: #fff;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+    }
+.challenge-box:hover p, .challenge-box:active p  {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -moz-transform 1s;
+    transition: transform 1s;
+    }
+
+/* ======= button styling, if needed ======*/
+a.challenge-button{
+    background: #E74C3C;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-family: 'Arial',sans-serif;
+    font-size: inherit;
+    margin: 0 0 30px 0;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    text-decoration:none;
+    z-index: 10;
+    position:relative;
+}
+
+.challenge-box .challenge-button:hover {
+  background:#C0392B;
+  color:#ffffff!important;
+}
